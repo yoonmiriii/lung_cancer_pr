@@ -22,6 +22,11 @@ if platform.system() == 'Linux':
 
 def run_reason() :
     st.header('폐암 데이터 보기')
+    st.markdown("""<style> h2 { color: #FF6347; } </style>""", unsafe_allow_html=True)
+
+    st.text('')
+    st.text('')
+    st.text('')
 
     st.subheader('다양한 현상들에 따른 폐암 발병 데이터')
 
@@ -29,6 +34,10 @@ def run_reason() :
     
     # if st.button('데이터 보기', help='클릭해주세요.', use_container_width=True) :
     st.dataframe(df)
+
+    st.text('')
+    st.text('')
+    st.text('')
 
     
     st.subheader('연령별 폐암 환자 수를 보여드립니다.')
@@ -43,9 +52,13 @@ def run_reason() :
         plt.legend()
         st.pyplot(fig1) 
 
+        st.text('')
+        st.text('')
+        st.text('')
+
 
     
-    st.subheader('컬럼을 선택하면, 폐암 환자의 각 컬럼별 분포를 보여드립니다.')
+    st.subheader('증상을 선택하면, 폐암 환자의 각 증상별 분포를 보여드립니다.')
     column_list = ['선택해주세요','성별', '흡연여부', '노란색손가락', '심리가불안정함', '또래압박', '만성질환', '피로감', '알레르기', '천명음', '음주', '기침', '숨가쁨', '삼키기어려움', '가슴통증']
 
     my_choice = st.selectbox('', column_list)
