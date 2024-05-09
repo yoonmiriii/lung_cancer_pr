@@ -3,17 +3,32 @@ import pandas as pd
 import numpy as np
 import seaborn as sb
 import matplotlib.pyplot as plt
+import matplotlib
+import matplotlib.font_manager
+ 
+# 폰트 전체 리스트 확인
+[i.fname for i in matplotlib.font_manager.fontManager.ttflist]
+ 
+# 나눔 폰트 설치 확인
+[f.name for f in matplotlib.font_manager.fontManager.ttflist if 'Nanum' in f.name]
+
+
+import platform
+from matplotlib import font_manager, rc
+plt.rcParams['axes.unicode_minus'] = False
+if platform.system() == 'Linux':
+    rc('font', family='NanumGothic')
 
 
 def run_reason() :
     st.header('폐암 데이터 보기')
 
-    st.subheader('폐암의 원인과 전조증상에 따른 폐암 발병 데이터')
+    st.subheader('다양한 현상들에 따른 폐암 발병 데이터')
 
     df = pd.read_csv('./data/survey_lung_cancer.csv')
     
-    if st.button('데이터 보기', help='클릭해주세요.', use_container_width=True) :
-        st.dataframe(df)
+    # if st.button('데이터 보기', help='클릭해주세요.', use_container_width=True) :
+    st.dataframe(df)
 
     
     st.subheader('연령별 폐암 환자 수를 보여드립니다.')
@@ -23,6 +38,8 @@ def run_reason() :
         fig1 = plt.figure()
         plt.hist(data= df_cancer, x= '나이', rwidth=0.9, bins = my_bins) 
         plt.title('나이대별 폐암 환자 수')
+        plt.xlabel('나이')
+        plt.ylabel('폐암 환자수(명)')
         plt.legend()
         st.pyplot(fig1) 
 
