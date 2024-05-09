@@ -11,13 +11,13 @@ import pandas as pd
 import plotly.express as px
 import io
 
-
-
 def main() :
     
+    
     menu = ['홈화면', '폐암 환자 통계 보러 가기', '폐암 가능성 예측해보기']
-
+    
       
+    
     with st.sidebar:
         choice = option_menu('Category', ['홈화면', '폐암 환자 통계 보러 가기', '폐암 가능성 예측해보기'],
                 icons=['홈화면', '폐암 환자 통계 보러 가기', '폐암 가능성 예측해보기'],
