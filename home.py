@@ -28,14 +28,4 @@ def run_home() :
 
     
     
-    # html_code = """
-    # <a href="https://www.kaggle.com/datasets/mysarahmadbhat/lung-cancer" target="_blank">https://www.kaggle.com/datasets/mysarahmadbhat/lung-cancer</a>
-    # """
-    # st.components.v1.html(html_code, height=30)
     
-    
-    # if st.button('데이터 출처 바로가기') :
-    #     webbrowser.open_new_tab(url)
-   
-    # else : 
-    #     st.text('')  
