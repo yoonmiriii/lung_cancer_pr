@@ -10,7 +10,7 @@
 
 ---
 
-|인터프리터 언어|Tool|웹 대시보드|플랫폼|배포|
+|인터프리터 언어|데이터분석|웹 대시보드|플랫폼|배포|
 |:------:|:------:|:---------:|:-----:|:--------:|
 |<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"/>|<img src="https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white /">|<img src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=flat-square&logo=Visual Studio Code&logoColor=white"/>|<img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"/>|<img src="https://img.shields.io/badge/Amazon%20EC2-FF9900?style=for-the-badge&logo=Amazon%20EC2&logoColor=white">|
 
